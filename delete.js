@@ -1,13 +1,12 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
 import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore.js";
-const firebaseConfig = {
-    apiKey:`${process.env.APIKEY}`,
-    authDomain:`${process.env.AUTHDOMAIN}`,
-    projectId: `${process.env.PROJECTID}`,
-    storageBucket: `${process.env.STORAGEBUCKET}`,
-    messagingSenderId: "683202047148",
-    appId: "1:683202047148:web:280c39d99b74bfab418309",
-    measurementId: "G-QD1Y58X3LZ",
+ const firebaseConfig = {
+    apiKey: "AIzaSyCa8SSSsvBrVKXqDyLneZ0OVBrPV39-46I",
+    authDomain: "spendifi-user.firebaseapp.com",
+    projectId: "spendifi-user",
+    storageBucket: "spendifi-user.appspot.com",
+    messagingSenderId: "416501871618",
+    appId: "1:416501871618:web:dbeb2e2184ee03ed54231b"
   };
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
