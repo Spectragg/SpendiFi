@@ -1,10 +1,10 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
 import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore.js";
 const firebaseConfig = {
-    apiKey: "AIzaSyCEVtrfH44TirAJITwXm118mwRU59JQTu4",
-    authDomain: "spendifi-616f9.firebaseapp.com",
-    projectId: "spendifi-616f9",
-    storageBucket: "spendifi-616f9.appspot.com",
+    apiKey:`${process.env.APIKEY}`,
+    authDomain:`${process.env.AUTHDOMAIN}`,
+    projectId: `${process.env.PROJECTID}`,
+    storageBucket: `${process.env.STORAGEBUCKET}`,
     messagingSenderId: "683202047148",
     appId: "1:683202047148:web:280c39d99b74bfab418309",
     measurementId: "G-QD1Y58X3LZ",
