@@ -24,10 +24,14 @@ jobs:
     - name: Build website
       run: npm run build
 
-    - name: Deploy to Firebase Hosting
-      uses: w9jds/firebase-action@master
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        args: deploy --only hosting
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        user_name: "GitHub Actions"
+        user_email: "actions@github.com"
+        cname: yourdomain.com # Optional: Set custom domain
 
     - name: Set Firebase Config
       run: |
